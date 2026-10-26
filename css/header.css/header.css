@@ -1,0 +1,57 @@
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    color: #1A1A1A;
+    font-family: google sans code, sans-serif;    
+}
+
+.header a{
+    color:black;
+    text-decoration: none;
+}
+
+.logo a{
+
+    font-size: 30px; 
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+}
+
+.logo span{
+    font-style: italic;
+    font-weight: 400;
+}
+
+.nav-menu{
+    display: flex;
+    gap: 30px; 
+      
+}
+
+.nav-link, .header-right{
+    font-size: 17px;
+    
+}   
+.nav-link.active{
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.header-right{
+    display: flex;
+    gap: 90px;
+    align-items: center; 
+}
+.log-in{
+  display: flex;
+  gap:8px;
+  align-items: center;
+}
+
+svg{
+    width: 35px;
+}
