@@ -12,17 +12,14 @@
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
-    background-color: rgb(239, 232, 224);    
-
 }
 
 html, body{
    overflow-x: hidden;
    height: auto;
+   background-color: rgb(239, 232, 224);
 }
-
-
-header{
+ .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -171,7 +168,6 @@ svg{
    font-size: 18px;
    margin: 8px 55px;
    text-decoration: dashed underline;
-   text-underline-offset: 3px;
    font-weight: normal;
    text-underline-offset: 6px;
      
@@ -183,6 +179,7 @@ svg{
   margin: 10px 40px; 
   list-style-type: disc;
   margin-top: 20px;
+  background-color: rgb(239, 232, 224);
 }
 
 .products-section-list li svg{
@@ -216,14 +213,14 @@ svg{
 
 
 
-/* .section-header{
+.section-header{
     display: flex;
     flex-direction: column;
     font-family:'Courier New', Courier, monospace
     font-weight: 800;
     font-size: 21px;
     margin: 10px 40px;
-} */
+}
 
 .section-subtitle{
     padding-top: 9px;
@@ -252,7 +249,7 @@ svg{
   background: none;
   border: none;
   font-size: 20px;
-  color: #333;  
+  color: #333;   
 }
 
 .product-name {
@@ -288,6 +285,7 @@ svg{
   display: flex;
   justify-content: flex-end;
   margin-right: 20px;
+  background-color: rgb(239, 232, 224);
 }
 .our-story, .bakery-intro{
   position: relative;
@@ -387,8 +385,12 @@ p{
   align-items: center;
   margin-bottom: 155px;
   text-align: center;
-  background: transparent;
+  color: white; 
 }
+.bakery-intro-description p{
+  color:white;
+}
+
 
 .footer-logo h2{
   font-size: 6.5vw;
