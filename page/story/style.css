@@ -81,3 +81,13 @@ html, body{
     flex-direction: column;
     gap:22.5rem;
 }
+
+@media (max-width:1100px){
+    .nav-menu, .log-in{
+        display: none;
+    }
+   .burger-menu{
+      display: block;
+   }
+  
+}

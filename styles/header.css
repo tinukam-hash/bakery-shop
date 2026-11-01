@@ -6,8 +6,9 @@ header{
     padding: 10px 20px;
     width: 100%;
     color: #1A1A1A;
-    font-family: google sans code, sans-serif;    
+    font-family: google sans code, sans-serif;   
 }
+
 
 .header a{
     color:black;
@@ -30,6 +31,13 @@ header{
     display: flex;
     gap: 30px; 
       
+}
+
+.burger-menu{
+  display: none;
+}
+.nav-menu a:hover{
+  text-decoration: underline;
 }
 
 .nav-link, .header-right{

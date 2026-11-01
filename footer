@@ -1,0 +1,60 @@
+<footer class="footer">
+  <div class="footer-container">
+      <div class="footer-logo">
+         <h2>Dolce <span><i>L</i></span>emaire</h2>
+      </div>
+
+    <div class="footer-content">
+      
+      <div class="footer-column">
+        <h3 class="column-title">Legal pages</h3>
+      </div>
+
+      
+      <div class="footer-column-links-column">
+        <p>Accessibility Statement</p>
+        <p>Terms & Conditions</p>
+        <p>Refund Policy</p>
+        <p>Shipping Policy</p>
+        <p>Privacy Policy</p>
+      </div>
+
+      
+      <div class="footer-column-labels-column">
+        <p class="contact">Contact</p>
+        <p class="address-label">Address</p>
+        <p class="hours-label">Opening hours</p>
+        <p class="social-label">Social</p>
+      </div>
+
+    
+      <div class="footer-column-details-column">
+        <p class="mysite">info@mysite.com</p>
+        
+        <p class="phone">123-456-7890</p>
+        
+        <p class="address">
+          500 Terry Francine St.<br>
+          San Francisco, CA 94158
+        </p>
+        
+        <p class="hours">10:00 – 20:00</p>
+        
+        <div class="social-links">
+          <p>Facebook</p>
+          <p>Instagram</p>
+          <p>Tiktok</p>
+        </div>
+      </div>
+
+    </div>
+
+    
+    <div class="footer-bottom">
+      <p>© 2035 by Dolce Lemaire. Powered and secured by <a href="#" class="copyright-link">Wix</a></p>
+    </div>
+    
+
+
+  </div>
+</footer>

@@ -1,0 +1,60 @@
+
+.footer-logo h2{
+  font-size: 6.5vw;
+  font-weight: 400;
+  margin-left: 20px;
+  letter-spacing: -5px;
+  
+}
+.footer-content{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:30px;
+  margin-bottom: 50px;
+  
+}
+.column-title{
+  font-family: google sans code;
+  font-size: 18px;
+  font-weight: normal;
+  margin-left: 22px;
+}
+.footer-column-links-column{
+  display: flex;
+  flex-direction: column;
+  gap:12px;
+  font-size: 18px;
+  font-family: google sans code;
+  color:#635d5d;
+  
+}
+.footer-column-labels-column{
+  color: black;
+}
+.contact, .hours-label, .mysite{
+  margin-bottom: 40px;
+}
+.address-label{
+  margin-bottom: 90px;
+}
+.phone, .address{
+  margin-bottom: 25px;
+}
+.hours{
+  margin-bottom: 50px;
+}
+.social-links{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.address{
+  display: flex;
+  flex-direction: column;
+  gap:9px;
+}
+
+
+.footer-bottom{
+  margin: 30px 22px;  
+}
