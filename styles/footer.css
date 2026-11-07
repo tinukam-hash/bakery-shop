@@ -12,7 +12,7 @@
   margin-bottom: 50px;
   
 }
-.column-title{
+.footer-column h3{
   font-family: google sans code;
   font-size: 18px;
   font-weight: normal;
@@ -56,4 +56,4 @@
 
 .footer-bottom{
   margin: 30px 22px;  
-}
+} 

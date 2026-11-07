@@ -110,9 +110,8 @@ svg{
 .intro-container {
   display: flex;
   justify-content: space-between;
-  border-top: 1px dashed #1a1a1a; 
-  border-bottom: 1px dashed #1a1a1a;
-  
+  border-top: 2px dashed #1a1a1a; 
+  border-bottom: 2px dashed #1a1a1a;
   padding: 20px 0;
   align-items: center;
   
@@ -127,12 +126,15 @@ svg{
 }
 
 .intro-right {
+  display: flex;
   font-family: google sans code;
-  text-align: center;
-  border-left: 1px dashed #1a1a1a;
-  padding-left: 120px; 
-  margin-right: 100px;
-  color: #1a1a1a;  
+  border-left: 2px dashed #1a1a1a;
+  height: 5rem;
+  padding-left: 7rem;
+  margin-right: 10rem;
+  color: #1a1a1a; 
+  align-items: center; 
+  justify-content: center;
 }
 
 
@@ -152,15 +154,17 @@ svg{
     font-family: google sans code;
     margin-bottom: 50px;
     align-items: flex-end;
-    justify-content: space-between;
-    
-    
+    justify-content: space-between; 
+}
+.hidden-h3{
+  display: none;
 }
 .products-section-content{
   display: flex;
   flex-direction: column;
-  margin-left: 1px;
+  margin-left: -30px;
 }
+
 
 .products-section-list li{
   display: flex;
@@ -190,20 +194,74 @@ svg{
 }
 
 .products-section-list li svg{
-  width: 15px;
+  width: 13px;
+}
+.products-section-breads{
+  display: flex;
+  flex-direction: column;
+  gap:6px;
+  margin-right: 30px;
+  
+
+}
+.breads {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: nowrap;
+  gap: 20px;     
+  align-items: center;
 }
 
-.products-section__image-wrapper{
-  display: flex; 
+
+.breads > div {
+  width: 19rem; 
 }
 
 
+.breads img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.bread-1 img{
+  width: 26rem;
+}
+
+.bread-1 {
+  z-index: 3;
+}
+
+
+.bread-2 {
+  margin-left: -10rem; 
+  z-index: 2;
+}
+
+
+.bread-3 {
+  margin-left: -8rem;
+  z-index: 1; 
+}
 
 .products-section-promo{
   display: flex;
-  justify-content: space-between;
-  margin-right: 90px;
 }
+.products-section-promo-text{
+  animation:move 2s linear infinite;
+  
+}
+  
+  @keyframes move{
+   100%{
+      transform: translatex(30%);
+  }
+   0%{
+    transform: translatex(0%);
+  }
+  
+}
+
 
 
 
@@ -227,7 +285,7 @@ svg{
   grid-template-columns: repeat(4, 1fr);
   
 }
-.product-card{
+.product-card, .product-card-3{
   display: flex;
   flex-direction: column;
   margin-left:25px;
@@ -237,7 +295,9 @@ svg{
  width: 100%;
  height: auto;
 }
-
+.dots {
+  display: none;
+}
 
 .add-btn {
   background: none;
@@ -455,13 +515,364 @@ p{
   margin: 30px 22px;  
 }
 
-@media (max-width:1000px){
+@media (max-width:1195px){
     .nav-menu, .log-in{
         display: none;
     }
    .burger-menu{
     display: block;
    }
- 
+
+}
+
+@media (max-width:1185px){
+  .intro-container{
+    flex-direction: column;
+    gap:3rem;
+    border-top: none;
   
+  }
+   .intro-right{
+    border-left: none;
+   }
+  
+  .products-section-promo{
+    border-bottom:2px dashed rgb(84, 81, 81);
+    gap:15px;
+  }
+  .intro-container{
+    flex-direction: column;
+    
+  }
+  .intro-left p{
+    text-align: center;
+  }
+  .products-section{
+    flex-direction: column-reverse;
+    align-items: center;
+    gap:4rem;
+  }
+  .products-section-content, .section-header{
+    margin-right: auto;
+  }
+  .bakery-interior img, .bakery-showcase img{
+    width: 100%;
+    height: auto;
+  }
+  .about-baking h2{
+    font-size:30px;
+  }
+  .about-baking p{
+    font-size:16px;
+  }
+ .about-baking button{
+    font-size:16px;
+  }
+  .footer .footer-content{
+        grid-template-columns: repeat(3, 1fr);
+        }
+        .footer-column-links-column p{
+        font-size:14px ;
+    }
+  
+}
+@media (max-width:1110px){
+  .products-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hidden-h3{
+    display: block;
+    font-family:google sans code;
+    margin-left: 25px;
+  }
+  .product-card img{
+    width: 65%;
+  }
+
+  .dots {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 3rem;
+    margin-left: auto;
+  }
+  .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #888; 
+    border-radius: 50%;    
+    display: inline-block;
+  }
+
+  .dot.active {
+    width: 10px;
+    height: 10px;
+    background-color: #222; 
+  }
+  .shop-btn button{
+    padding: 9px 28px;
+    font-size: 12px;
+  }
+  .product-card-3{
+    display: none;
+  }
+  .about-baking{
+    position: static;
+    flex-direction: column;
+    margin-bottom:20px;
+    padding: 25px;
+  }
+  
+  .about-baking h2{
+    font-size: 22px;
+  }
+  .about-baking p{
+    font-size: 16px;
+  }
+  .about-baking button{
+     font-size: 14px;
+     padding: 9px 28px;
+     margin-top: 15px;
+  }
+  
+  
+  
+   .footer .footer-content{
+        grid-template-columns: repeat(2, 1fr);
+        }
+        .footer-column-links-column p{
+        font-size:14px;
+    }
+}
+@media (max-width:900px){
+  .intro-section p{
+    font-size: 12px;
+  }
+  .header-row{
+    font-size: 14px;
+  }
+  .breads > div {
+  width: 16rem; 
+}
+.bread-1 img{
+  width:20rem;
+}
+.breads{
+  align-items: center;
+}
+.bread-1 {
+  z-index: 3;
+}
+
+
+.bread-2 {
+  margin-left: -11rem; 
+  z-index: 2;
+}
+
+
+.bread-3 {
+  margin-left: -8rem;
+  z-index: 1; 
+}
+.community-section{
+  display: flex;
+  flex-direction: column;
+
+}
+.community-container{
+  gap:25px;
+  margin-left: 20px;
+}
+.community-cravings-title h2{
+  font-size: 25px;
+}
+.community-container h3, p{
+  font-size: 15px;
+}
+.bakery-intro-title h2{
+  font-size: 25px;
+}
+.bakery-intro-description p{
+  font-size: 13px;
+}
+  .footer .footer-content{
+        grid-template-columns: 1fr;
+        margin-bottom: 30px;
+        gap: 8px;
+        margin-left: 15px;
+        font-size: 13px;
+    }
+   
+     .footer .footer-column-links-column{
+        font-size: 14px;
+    } 
+    
+     .footer .footer-column{
+        font-size: 15px;
+        letter-spacing: -1.5px;
+    }
+    .footer .footer-logo h2{
+        font-weight: 200;
+        letter-spacing: 1px; 
+      
+    } 
+
+}
+@media (max-width:600px){
+  .header .logo a{
+        font-size: 20px;
+        letter-spacing: -1.5px;
+    }
+    .header .cart, .header-right{
+        font-size: 11px;  
+        letter-spacing: -1.5px;      
+    }
+    .burger-menu svg{
+        width: 18px;
+        
+    }
+    .intro-left p, .intro-right p{
+      font-size: 10px;
+      letter-spacing: -1px;
+    }
+    .intro-right p{
+      margin-left: -40px;
+    }
+    
+     .products-section-content h3{
+      font-size: 15px;
+     }
+     .products-section-list li{
+      font-size: 13px;
+     }
+    
+  .breads > div {
+  width: 13rem; 
+}
+.bread-1 img{
+  width:15rem;
+}
+.breads{
+  align-items: center;
+  
+}
+.bread-1 {
+  z-index: 3;
+}
+
+
+.bread-2 {
+  margin-left: -8rem; 
+  z-index: 2;
+}
+
+
+.bread-3 {
+  margin-left: -8rem;
+  z-index: 1; 
+}
+.section-header h2{
+  font-size: 20px;
+}
+.section-header p{
+  font-size: 14px;
+}
+.products-section-promo{
+  font-size: 13px;
+}
+.product-card img{
+  width: 70%;
+}
+.about-baking{
+  margin-left: 3px;
+}
+.about-baking h2{
+    font-size: 20px;
+    margin-right: auto;
+  }
+  
+  .about-baking button{
+     font-size: 12px;
+     padding: 8px 28px;
+     margin-top: 13px;
+     margin-right: auto;
+  }
+  .about-baking p{
+    font-size: 12px;
+  }
+
+
+}
+@media (max-width:450px){
+  .intro-right{
+    height: auto;
+    margin-right: auto;
+  
+  }
+  
+ .intro-container{
+  font-size: 12px;
+ }
+ 
+  .breads > div {
+  width: 10rem; 
+}
+.bread-1 img{
+  width:14rem;
+}
+.bread-1 {
+  z-index: 3;
+}
+
+
+.bread-2 {
+  order:3;
+  margin-left: -5rem; 
+  z-index: 2;
+}
+
+
+.bread-3 {
+  margin-left: -7rem;
+  z-index: 2; 
+}
+.section-header h2{
+  font-size: 17px;
+}
+.section-header p{
+  font-size: 12px;
+}
+.section-header{
+  margin-left: 15px;
+}
+.community-cravings-title h2{
+  font-size: 18px;
+}
+.community-container h3, p{
+  font-size: 12px;
+}
+  
+  .product-card img{
+  width: 90%;
+}
+.shop-btn button{
+  margin-bottom: 15px;
+}
+.about-baking br{
+    display: none;
+  }
+ .about-baking h2{
+  font-size: 18px;
+  
+ } 
+}
+@media (max-width:370px){
+  .breads > div {
+  width: 8rem; 
+}
+.bread-1 img{
+  width:10rem;
+}
 }

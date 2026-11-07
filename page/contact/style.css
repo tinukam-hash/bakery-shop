@@ -82,7 +82,7 @@ html, body{
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom:160px; 
+  margin-bottom:8rem; 
   
 }
 
@@ -176,11 +176,7 @@ html, body{
     flex: 1;
 }
 
-.phone-icon {
-    font-size: 14px;
-    margin-right: 8px;
-    color: #333;
-}
+
 
 
 .form-submit {
@@ -205,55 +201,76 @@ html, body{
 }
 
 
-@media (max-width:1000px){
+@media (max-width:1130px){
     .nav-menu, .log-in{
         display: none;
     }
    .burger-menu{
     display: block;
    }
-  
+   .contents{
+    flex-direction: column;
+    gap: 4px;
+   }
+   .bakery-content h1{
+    font-size: 25px;
+   }
+   .bakery-content p{
+    font-size: 13px;
+   }
+   .bakery-content h3{
+    font-size: 15px;
+   }
+   .reach-left h2{
+     font-size: 20px;
+   }
+   .reach-left p{
+    font-size: 13px;
+   }
+   .footer .footer-content{
+        grid-template-columns: repeat(3, 1fr);
+        }
+        .footer-column-links-column p{
+        font-size:14px ;
+    }
+    
 }
-@media (max-width:925px){
-    .content-title, .reach-left h2{
-      font-size: 25px;
+
+
+@media (max-width:1040px){
+    .reach-left h2{
+        font-size: 20px;
     }
-    .content-paragraph, .reach-left p,
-    .bakery-content p{
-        font-size: 14px;
+    .reach-left p{
+        font-size: 13px;
     }
-    .bakery-content h3, .reach-right h3 {
-        font-size: 15px;
+     .footer .footer-content{
+        grid-template-columns: repeat(2, 1fr);
     }
-    
-    .bakery-content-header,
-    .contents, .reach-kitchen-section{
-        flex-direction: column;
-        gap:10px;
-    }
-  
-    .bakery-content-header{
-        order: 5;
-        margin-bottom:5px;
-        gap:10px;
-    }
-    
-    
-  
+     .footer-column-links-column p{
+        font-size:13px ;
+    }   
 }
-@media (max-width: 700px){
+
+
+@media (max-width: 950px){
     .header .logo a{
-        font-weight: 150;
+        font-size: 20px;
         letter-spacing: -1.5px;
     }
     .header .cart, .header-right{
-        font-size: 13px;  
+        font-size: 11px;  
         letter-spacing: -1.5px;      
     }
     .burger-menu svg{
-        width: 20px;
+        width: 18px;
         
     }
+     .reach-kitchen-section{
+        flex-direction: column;
+        gap:35px;
+     }
+    
     .bakery-content p{
         font-size: 12px;
         letter-spacing: -0.2px;
@@ -268,38 +285,39 @@ html, body{
         margin-left: 15px;
         font-size: 13px;
     }
-    .footer-content .footer-column-links-column{
+     .footer-content .footer-column-links-column{
         font-size: 14px;
-    }
-    .footer-content .footer-column{
+    } 
+     .footer-content .footer-column{
         font-size: 15px;
         letter-spacing: -1.5px;
     }
     .footer .footer-logo h2{
         font-weight: 200;
-        letter-spacing: 1px;
-      
+        letter-spacing: 1px; 
+    } 
+}
+@media (max-width:650px){
+    .form-row{
+        display: flex;
+        flex-direction: column;
     }
-  
+    .reach-left h2{
+        font-size: 18px;
+    }
+    .reach-left p{
+        letter-spacing: -1px;
+    }
+    .reach-right h3{
+        font-size: 16px;
+    }
+    .form-submit button{
+        margin-right: auto;
+        padding: 10px 100px;
+    }
 }
 
 
-@media (max-width:600px){
-    .reach-kitchen-section form{
-        width: 100%;
-    }
-}
 
 
-@media (max-width:450px){
-    .reach-kitchen-section .form-row{
-        gap: 10px;
-        margin-left: 20px;
-    }
-    .reach-kitchen-section .form-submit{
-        margin-right: 22px;
-    }
-    .reach-kitchen-section .form-group{
-        width: 50%;
-    }
-}
+

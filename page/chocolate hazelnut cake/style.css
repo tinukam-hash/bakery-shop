@@ -206,16 +206,47 @@ html, body{
    .burger-menu{
     display: block;
    }
-  
+  .footer .footer-content{
+        grid-template-columns: repeat(3, 1fr);
+        }
+        .footer-column-links-column p{
+        font-size:14px ;
+    }
   
 }
 @media (max-width:820px){
+     
     .product-page{
         flex-direction: column;
     }
      .footer .footer-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+     .footer-column-links-column p{
+        font-size:13px ;
+    }
+    
+}
+
+@media (max-width:450px){
+   .button-group{
+    flex-direction: column;
+   }
+    .header .logo a{
+        font-size: 20px;
+        letter-spacing: -1.5px;
+    }
+    .header .cart, .header-right{
+        font-size: 11px;  
+        letter-spacing: -1.5px;      
+    }
+    .burger-menu svg{
+        width: 18px;
+        
+    }
+    .footer .footer-content{
         grid-template-columns: 1fr;
-        gap: 8px;
+          gap: 8px;
         margin-left: 15px;
         font-size: 13px;
     }
@@ -231,27 +262,7 @@ html, body{
         letter-spacing: 1px;
       
     } 
-}
-
-@media (max-width:450px){
-   .button-group{
-    flex-direction: column;
-   }
+    
    
 }
 
-@media (max-width:365px){
-     .header .logo a{
-        font-weight: 150;
-        letter-spacing: -1.5px;
-    }
-    .header .cart, .header-right{
-        font-size: 15px;  
-        letter-spacing: -1px; 
-        align-items: center;     
-    }
-    .burger-menu svg{
-        width: 20px;
-        
-    }
-}
